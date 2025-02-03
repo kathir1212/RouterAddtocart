@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useCart } from "../Context/productContext";
+import { Link } from 'react-router-dom'
 
 function Home() {
   const [products, setProducts] = useState([]);
