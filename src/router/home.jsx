@@ -20,13 +20,15 @@ function Home() {
         return (
           <div key={product.id} className="h-full mb-[7%]">
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-              <a href={`/product/${product.id}`}>
-                <img
+             <Link to={`/product/${product.id}`}>
+             <img
                   src={product.image}
                   className="rounded-t-lg w-[100%] object-cover h-[200px] "
                   alt={product.title}
                 />
-              </a>
+             </Link>
+             
+              
               <div className="p-5">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white truncate">
                   {product.title}
